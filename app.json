@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Aora",
-    "slug": "aora",
+    "name": "jsm_reactnative",
+    "slug": "jsm_reactnative",
     "scheme": "aora",
     "version": "1.0.0",
     "orientation": "portrait",
