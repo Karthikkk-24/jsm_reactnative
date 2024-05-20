@@ -21,11 +21,11 @@ const SignIn = () => {
   return (
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
-        <View className="w-full justify-center h-full px-4 my-6">
+        <View className="w-full justify-center min-h-[85vh] px-4 my-6">
           <Image
             source={images.logo}
             resizeMode="contain"
-            className="w-[115px] h-[35px]"
+            className="w-[115px] h-[35px] mb-3"
           />
           <Text className="text-xl text-white font-semibold">
             Log In To Aora
@@ -44,13 +44,22 @@ const SignIn = () => {
             handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-7 mb-7"
           />
-          <CustomButton title="Log In" isLoading={isSubmitting} handlePress={submit} />
+          <CustomButton
+            title="Log In"
+            isLoading={isSubmitting}
+            handlePress={submit}
+          />
 
           <View className="flex-row items-center justify-center mt-7">
-                <Text className="text-lg text-gray-100 font-pregular">
-                    Don't have an account?
-                </Text>
-                <Link href={"/sign-up"} className="text-lg text-secondary font-psemibold ml-1">Sign Up</Link>
+            <Text className="text-lg text-gray-100 font-pregular">
+              Don't have an account?
+            </Text>
+            <Link
+              href={"/sign-up"}
+              className="text-lg text-secondary font-psemibold ml-1"
+            >
+              Sign Up
+            </Link>
           </View>
         </View>
       </ScrollView>
